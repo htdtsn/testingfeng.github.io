@@ -281,26 +281,34 @@
         }
 
         .shoutbox {
-    position: relative; /* Remove absolute positioning */
-    width: 100%;
-    height: 100%; /* Ensure it fills the container */
-    background: #222;
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid yellow;
-    padding: 0;
-    box-sizing: border-box;
-}
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #222;
+            max-width: 269px;
+            max-height: 220px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid yellow;
+            padding: 0;
+            box-sizing: border-box;
+            margin-left: 600px;
 
-.shoutbox iframe {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    background: #333;
-    border: none;
-}
+
+        }
+
+
+
+        .shoutbox iframe {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            background: #333;
+            border: none;
+
+        }
 
         .credits {
             position: relative;
@@ -425,7 +433,6 @@
         <div class="page-navigation">
             <button onclick="showPage('pinboard')">albums</button>
             <button onclick="showPage('shoutbox')">Shoutbox</button>
-            <button onclick="showPage('credits')">Credits</button>
         </div>
 
         <div id="pinboard" class="page-content active">
@@ -444,21 +451,7 @@
             </div>
         </div>
 
-        <div id="credits" class="page-content" style="display: none;">
-            <div class="credits">
-                <div class="credit-card">
-                    <img src="pfps/sem.jpg" alt="Person 1">
-                    <h3>@htdtsn</h3>
-                    <p></p>
-                </div>
-                <div class="credit-card">
-                    <img src="pfps/girl.png" alt="Person 2">
-                    <h3>kai
-                    </h3>
-                    <p></p>
-                </div>
-            </div>
-        </div>
+        
     </div>
 
     <script src="music.js"></script>
